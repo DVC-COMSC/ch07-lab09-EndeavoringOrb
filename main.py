@@ -8,3 +8,4 @@ for i in range(len(names)-1):
 for i in range(len(names)):
     names[i][0].upper()
 print(names[0])
+print(names[len(names)-1])
