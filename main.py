@@ -1,6 +1,6 @@
 names = list(input().split(" "))
 names_sorted = []
-for i in range(len(names)):
+for i in range(len(names)-1):
     names_sorted.insert(0,names[i])
     if len(names_sorted[i]) > len(names_sorted[i+1]):
         names_sorted[i],names_sorted[i+1] = names_sorted[i+1],names_sorted[i]
