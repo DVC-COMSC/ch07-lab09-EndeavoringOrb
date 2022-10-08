@@ -11,3 +11,4 @@ for i in range(len(names)-1):
                 continue
             else:
                 break
+print(names[0])
