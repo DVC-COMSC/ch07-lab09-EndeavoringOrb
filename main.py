@@ -1,4 +1,4 @@
-names = list(input().lower().split(" "))
+names = list(input().split(" "))
 for i in range(len(names)-1):
     if len(names[i]) > len(names[i+1]):
         names[i],names[i+1] = names[i+1],names[i]
