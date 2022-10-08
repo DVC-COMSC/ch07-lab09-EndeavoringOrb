@@ -11,4 +11,6 @@ for i in range(len(names)-1):
                 continue
             else:
                 break
+for i in range(len(names)):
+    names[i][0].upper()
 print(names[0])
