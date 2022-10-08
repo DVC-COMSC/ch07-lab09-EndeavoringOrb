@@ -3,7 +3,7 @@ for i in range(len(names)-1):
     if len(names[i]) > len(names[i+1]):
         names[i],names[i+1] = names[i+1],names[i]
     elif len(names[i]) == len(names[i+1]):
-        if ord(names[i][j]) > ord(names[i][j]):
+        if ord(names[i][0]) > ord(names[i][0]):
             names[i],names[i+1] = names[i+1],names[i]
 for i in range(len(names)):
     names[i][0].upper()
