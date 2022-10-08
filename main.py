@@ -9,5 +9,5 @@ for i in range(len(names)):
             shortest = names[i]
     if len(names[i]) > len(longest):
         longest = names[i]
-print(shortest, end = "")
+print(shortest, end = " ")
 print(longest)
