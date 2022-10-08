@@ -1,11 +1,13 @@
 names = list(input().split(" "))
-names_sorted = []
-for i in range(len(names)-1):
-    names_sorted.insert(0,names[i])
-    if len(names_sorted[i]) > len(names_sorted[i+1]):
-        names_sorted[i],names_sorted[i+1] = names_sorted[i+1],names_sorted[i]
-    elif len(names_sorted[i]) == len(names_sorted[i+1]):
-        if ord(names_sorted[i][0]) > ord(names_sorted[i][0]):
-            names_sorted[i],names_sorted[i+1] = names_sorted[i+1],names_sorted[i]
-print(names[0])
-print(names[len(names)-1])
+shortest = ""
+longest = ""
+for i in range(len(names)):
+    if len(names[i]) < len(shortest):
+        shortest = names[i]
+    if len(names[i]) == len(shortest):
+        if ord(names[i][0]) < len(shortest[0]):
+            shortest = names[i]
+    if len(names[i]) > len(longest):
+        longest = names[i]
+print(shortest)
+print(longest)
